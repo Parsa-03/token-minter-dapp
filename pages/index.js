@@ -1,7 +1,16 @@
 import React from "react";
 
+//internal import
+import { useStateContext } from "../Context/index";
+
 const index = () => {
-  return <div>index</div>;
+  const { TOKEN_ICO, transferNativeToken } = useStateContext();
+  return (
+    <div>
+      <h1> {TOKEN_ICO} </h1>
+      <button onClick={() => transferNativeToken()}> TRANSFER </button>
+    </div>
+  );
 };
 
 export default index;
