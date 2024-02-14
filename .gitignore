@@ -42,3 +42,5 @@ typechain-types
 cache
 artifacts
 
+# VSCode
+.vscode/*
