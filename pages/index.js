@@ -41,7 +41,7 @@ const index = () => {
       <Banner transferNativeToken = {transferNativeToken} />
       <Service/>
       <About/>
-      <tokenSale buyToken={buyToken} tokenSale={tokenSale}/>
+      <TokenSale buyToken={buyToken} tokenSale={tokenSale}/>
       <Distribution/>
       <MobileApp/>
       <Team/>
