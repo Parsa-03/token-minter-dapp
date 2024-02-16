@@ -5,7 +5,7 @@ const tokens = (nToken) => {
 }
 async function main() {
     //DEPLOY TOKEN CONTRACT
-    const _initialSupply = tokens(50000000);
+    const _initialSupply = tokens(21000000);
 
     const TheBlockchainCoders = await hre.ethers.
     getContractFactory(
