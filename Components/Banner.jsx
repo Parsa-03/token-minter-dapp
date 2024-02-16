@@ -36,9 +36,10 @@ const Banner = ({ transferNativeToken }) => {
               <a href="#token" className="btn btn-border btn-radius">
                 Buy Token Now! <BsArrowRight />
               </a>
-              {/* <a href="#token" className="btn btn-border btn-radius">
+              {/* <a onClick={() => transferNativeToken()} href="#" className="btn btn-border btn-radius">
                 Transfer Token <BsArrowRight />
               </a> */}
+              {/* The function above is admin only and for transferring the funds to the smart contract for distribution */}
             </div>
 
             <span className="text-white icon_title animation"

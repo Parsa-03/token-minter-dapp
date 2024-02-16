@@ -93,11 +93,12 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                   >
                     <input
                       type="number"
-                      required placeholder="1"
+                      required
+                      placeholder="1"
                       id="first-name"
                       min={1}
                       className="form-control"
-                      onChange={() => setNToken(e.target.value)}
+                      onChange={(e) => setNToken(e.target.value)}
                       name="token" />
                   </div>
                 </div>
@@ -113,7 +114,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                     aria-valuenow={`${percentage}`}
                     aria-valuemin={"0"}
                     aria-valuemax={"100"}
-                    style={{ "width": `${percentage}%`, }}
+                    style={{ width: `${percentage}%`, }}
                   >
                     {
                       showPercentage.slice(0, 4)
@@ -138,7 +139,7 @@ const TokenSale = ({ buyToken, tokenSale }) => {
                   </span>
                 </div>
 
-                <a className="btn btn-default btn-radius animation"
+                <a onClick={() => buyToken(nToken)} className="btn btn-default btn-radius animation"
                   data-animation="fadeInUp"
                   data-animation-delay="0.1s"
                 >
