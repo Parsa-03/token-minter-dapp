@@ -115,10 +115,9 @@ const Banner = ({ transferNativeToken }) => {
         </div>
 
         <div className="col-lg-6 col-md-12 col-sm-12 order-first">
-          <div className="banner_image_right res_md_mb_50 res_xs_mb_30 animation"
+          <div className="banner_image_center res_md_mb_50 res_xs_mb_30 animation"
             data-animation="fadeInRight"
             data-animation-delays="1.5s">
-
             <img src="assets/images/banner_img2.png" alt="banner2" className="new_image" />
           </div>
         </div>
