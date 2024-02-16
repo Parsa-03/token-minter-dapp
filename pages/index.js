@@ -44,8 +44,8 @@ const index = () => {
       <TokenSale buyToken={buyToken} tokenSale={tokenSale}/>
       <Distribution/>
       <MobileApp/>
-      <Team/>
-      <Faq/>
+      {/* <Team/>
+      <Faq/> */}
       <Contact/>
       <Footer/>
 
